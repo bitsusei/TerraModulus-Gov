@@ -1,0 +1,337 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<epc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="../../schemas/epc.xsd"
+     sn="1" created="2026-05-12" version="2026-1" status="draft"
+     title="Execution Framework Proposal (EFP) Process">
+	<metadata>
+		<proposal efp="1"/>
+	</metadata>
+	<body>
+		<preamble>
+			<p>
+				An approved Execution Framework Proposal (EFP) may represent the current state of affairs
+				in the Constitution.
+				An EFP may or may not take effects to change any aspects of affairs in the Constitution depending
+				on the status of the said EFP. Other than the basic Rules defined in the Constitution, this
+				Policy refines further for detailed steps and procedures for EFPs.
+			</p>
+			<p>
+				EFPs are publicly visible and allow open project supervisions by the public,
+				while keeping the project workflow streamlined enough.
+				These could provide clear guidelines and information about various topics, so as the processes.
+				This would also allow certain public involvement in the project while
+				keeping certain intent of organized workflow.
+			</p>
+			<p>
+				An EFP may not be highly executive, but may involve certain objectives, deliverables,
+				or boundaries of the Project.
+				There may not be time constrains, but the milestones and objectives may be decided in the roadmap.
+				Moreover, it would be intended to standardize and guide the Project or a process.
+			</p>
+			<p>
+				Occasionally, certain EFPs may solicit feedback from the Community depending on the context,
+				so EFPs may be updated and revised upon feedbacks or progressions.
+				However, the topics or the themes of the EFPs should not be changed,
+				or else a new EFP should be issued for the new content and updates.
+				Certainly, detailed descriptions should always be included to ensure that the goals and
+				methods are generally understood, except for the progressional development of the thoughts
+				to be included in related Executive Research Dossiers (ERDs).
+			</p>
+			<p>
+				EFPs may contain both normative and non-normative content at the same time.
+				It may be up to the decision of the author(s) for the final interpretation of the contents,
+				including but not limited to the parts of whether the related contents are to be normative,
+				non-normative or outdated.
+			</p>
+			<p>
+				Once finalized, the EFPs shall become immutable, but maintenance and errata may be allowed.
+				This includes minor content modifications without effects to the designated meanings and
+				metadata changes of the documents.
+			</p>
+		</preamble>
+		<section title="Filing">
+			<content>
+				<p>
+					The identifiers of EFPs shall be strictly sequential as the serial number starting at one.
+					The identifier shall be assigned only when the initiation of the EFP is approved.
+					After that, the document entry shall not be declined or removed regardless.
+				</p>
+			</content>
+		</section>
+		<section title="Initiation of EFP">
+			<content>
+				<p>
+					A Community Member may initiate an EFP via a Pull Request on the respective Repository of EFPs.
+				</p>
+				<p>
+					When an EFP is being initiated, it must be in the status of "<b>Draft</b>".
+				</p>
+				<p>
+					An identifier for the EFP shall only be assigned when the Pull Request of the Initiation of the EFP
+					is accepted under consensus.
+				</p>
+			</content>
+		</section>
+		<section title="Structure of EFP Entries">
+			<content>
+				<p>
+					Metadata and Contents of an EFP are separately regulated in different aspects.
+				</p>
+				<p>
+					EFPs are managed and formatted using <b>Extensible Markup Language (XML)</b>.
+					The formats of EFP Documents must be defined in an XML Schema stored in the Repository.
+				</p>
+			</content>
+			<section title="Metadata">
+				<content>
+					<p>
+						Metadata of an Entry include the title, the management information, reference anchors outside
+						Contents and references in Contents, where the management information includes the creation
+						date, categorization and document status.
+					</p>
+					<p>
+						The creation date should be the date on or before the date
+						at the Coordinated Universal Time (UTC),
+						the time the Document started being drafted by the Author.
+					</p>
+					<p>
+						The title must not be empty, but the exact wording depends on the Author's preference under
+						the consensus of the Document Moderators.
+					</p>
+					<p>
+						References used must be in topic of the Document. The uses of named and unnamed References
+						are separated, but the presence of them may be optional.
+					</p>
+				</content>
+			</section>
+			<section title="Contents">
+				<content>
+					<p>
+						The Format of the Contents must align with the format of the XML defined in the XML Schema.
+					</p>
+					<p>
+						The first section is advisory to be an Introduction to the Document being introduced,
+						with the section heading of "Introduction". It should describe the brief abstract about
+						the topic the EFP is relevant to, and be kept short but descriptive.
+					</p>
+					<p>
+						The last section of contents may be a section with a heading of "See also" for readers'
+						interests and references for advisory uses.
+					</p>
+				</content>
+			</section>
+		</section>
+		<section title="Structure of the Repository">
+			<content>
+				<p>
+					All EFP Entries are stored in a directory named <code>efp</code> in the root.
+					Each EFP Entry in the directory should be stored with its own subdirectory named
+					with a single decimal number as the assigned identifier of the Entry.
+				</p>
+				<p>
+					All the affiliated files and the XML Document of the EFP itself should be stored in its directory
+					for its Entry. The main XML Document shall be stored as a file named <code>main.xml</code> in the
+					Entry directory.
+				</p>
+				<p>
+					The XML Schema is defined in <code>efp.xsd</code> in a root directory named <code>schemas</code>.
+				</p>
+			</content>
+		</section>
+		<section title="Lifecycles of EFPs">
+			<content>
+				<p>
+					When EFPs are firstly created, they are in the status of "<b>Draft</b>".
+				</p>
+				<p>
+					If an EFP may be effective, it may turn into the status of "<b>Provisional</b>" while the Contents
+					are still mutable.
+					Once EFPs became "<b>Provisional</b>", they may not turn back to "<b>Draft</b>" by any mean.
+				</p>
+				<p>
+					After reviewing and revisions, an EFP may become "<b>Final</b>" as finalized, and thus immutable.
+					This means such EFP is confirmed under the consensus of associated parties.
+				</p>
+				<p>
+					Further revisions and changes regarding the concerning finalized EFP should be conducted
+					by proposing new EFPs updating or obsoleting the original EFP instead.
+				</p>
+				<p>
+					A "<b>Draft</b>" or "<b>Provisional</b>" EFP may be "<b>Deferred</b>" when it is paused and its
+					development may be postponed until future evaluation for continuation.
+					Even if an EFP is logically "canceled",
+					it would still be assigned to this status but with the implied meaning of being
+					"indefinitely deferred".
+					This would allow potential pick up of the EFP. If there is a replacement EFP,
+					the EFP could be marked as "<b>Obsoleted</b>" by the other EFP.
+				</p>
+			</content>
+		</section>
+		<section title="Interactions between EFPs">
+			<content>
+				<p>
+					When changes to existing proposed EFPs are highly significant, separate EFPs that <b>Updates</b>
+					the target EFPs may be issued, without replacing the presence of the existing EFPs.
+					<b>Updating</b> EFPs may introduce additional definitions, clarifications, extensions, or amendments
+					that complement or alter the original Documents. The Updates may address specific aspects,
+					propose new features, or clarify significant ambiguities without rewriting entire proposals.
+					The target EFPs are described to be <b>Updated</b> by the <b>Updating</b> EFPs.
+				</p>
+				<p>
+					When an initiation of an EFP replaces the presence or effectiveness of another EFP, such new EFP
+					is described to supersede and <b>Obsolete</b> the past EFP. The target EFP is then <b>Obsoleted</b>.
+					In the absence of concept of withdrawing EFPs,
+					an EFP may be issued to <b>Obsolete</b> the target EFPs.
+					<b>Obsoleting</b> EFP may not supersede the target EFP, but withdraw its position.
+				</p>
+				<p>
+					When an EFP involves a thematic relation with another EFP,
+					such EFP may be <b>Derived</b> from the other EFP.
+					Such derivation or derivative must be in a strong topic relation with the <b>Deriving</b> EFP.
+					This is different from referencing, while in this case, the entire <b>Derived</b> EFP may be
+					related to the other EFP. However, overarching proposals are not applicable to be described to
+					<b>Derive</b> to any derivation or derivative.
+				</p>
+			</content>
+		</section>
+		<section title="Classification">
+			<content>
+				<p>
+					The Type of EFP depends on intended purposes of the proposals. If an EFP is to propose anything
+					that is new, planning or changing to anything, it should be "<b>Formal</b>"; otherwise,
+					it should be "<b>Informational</b>".
+				</p>
+				<p>
+					<b>Formal</b> EFPs may still contain non-normative information for examples, clarifications,
+					suggestions, recommendations or significant comments. Certain information may be purely for
+					demonstrative purposes without any actual implementations or executions.
+				</p>
+				<p>
+					Executive and Governance workflows are always classified to be "<b>Governance</b>".
+					Administration-related proposals may also be classified to this Category.
+				</p>
+				<p>
+					Overarching proposals for the Architecture and proposals involving relationships and
+					interoperability between different Executive or Governance Entities,
+					or management of Projects, are classified as "<b>Organization</b>.
+				</p>
+				<p>
+					Execution proposals special to a particular Project or a range of Projects with a theme,
+					are classified as "<b>Project</b>". This includes initiations and directions of Projects,
+					executions within the Project(s), and shutdowns of Projects.
+					However, this does not include changes involving adscription of Projects;
+					for such, separate proposals are recommended.
+				</p>
+				<p>
+					General standards and specifications without specific references to certain Projects should
+					be classified as "<b>Standard</b>. Adapting proposals of such should be classified depending
+					on the adapting targets and scopes, also the natures of the standards or specifications.
+				</p>
+				<p>
+					Other proposals do not belong to any aforementioned Categories should be classified
+					as "<b>General</b>".
+					However, this Category should be carefully considered.
+					Proposals under this Category may not function
+					or be regarded to contain any execution meanings by any means. A new Category may be proposed
+					if such case occurs while such proposals require executions or attentions.
+				</p>
+			</content>
+		</section>
+		<section title="Review and Approval">
+			<content>
+				<p>
+					EFPs are up to public's supervision when initiation or modification is published via Pull Requests.
+				</p>
+				<p>
+					EFPs would undergo peer reviews and may include Executives' oversight depending on the contents.
+				</p>
+				<p>
+					EFPs must be approved by the Moderators, and may require Executives' approvals for authoritative
+					proposals depending on Moderators' considerations.
+				</p>
+			</content>
+		</section>
+		<section title="Amendment to Non-Finalized EFP Entries">
+			<content>
+				<p>
+					EFPs with a status other than "<b>Final</b>" may be changed in any way, without restriction,
+					but dedicated modifications to a particular EFP must be organized in a single Pull Request.
+				</p>
+				<p>
+					Unless necessary, a Pull Request should only modify one EFP Entry.
+				</p>
+			</content>
+		</section>
+		<section title="Amendment to Finalized EFP Entries">
+			<content>
+				<p>
+					Once EFPs are finalized, only subtle and trivial changes are allowed to the Contents and
+					their affiliated files; the Titles must remain immutable and unchanged.
+				</p>
+				<p>
+					Changes to Metadata are allowed, but changes to Contents are limited.
+				</p>
+				<p>
+					Subtle and trivial changes include errata, corrections of intended wordings and meanings.
+					However, sentence structure is not recommended to be changed, and any change to
+					organizations of paragraphs is prohibited.
+				</p>
+			</content>
+		</section>
+		<section title="Amendment to Formatting">
+			<content>
+				<p>
+					An EFP must be created to track and conduct the Amendments of Formatting of any Governance Document
+					System.
+				</p>
+			</content>
+		</section>
+		<section title="Document Rendering and Utilities">
+			<content>
+				<p>
+					Rendering of EFPs should be done by generating Extensible HyperText Markup Language (XHTML) format
+					according to the XML contents of the Documents.
+					The resultant files are to be deployed to a static site.
+					Those generated files should not be tracked by the Version Control System (VCS).
+				</p>
+				<p>
+					Assistant or helper scripts or tools may be introduced for developers' or authors' convenience.
+				</p>
+			</content>
+		</section>
+		<section title="Management of Pull Requests">
+			<content>
+				<p>
+					All Pull Requests regarding changes to EFP Entries are under regulation in the following clauses.
+				</p>
+				<p>
+					When a Pull Request related to an initiation or modification to a particular EFP, its title
+					must be prefixed with "[EFP <i>N</i>]" and a space, with the Rules of using identifiers.
+					Its Pull Request identifier number must be recorded in the EFP Document Metadata.
+				</p>
+				<p>
+					When a Pull Request only changes Metadata of EFPs without any changes to Contents, it may
+					not be prefixed with an EFP identifier by the above clause.
+				</p>
+			</content>
+		</section>
+		<section title="Usage of Identifiers">
+			<content>
+				<p>
+					Generally, when referring to a particular EFP, one may use "EFP <i>N</i>", where <i>N</i> is
+					a positive integral identifier of the EFP without any leading zero.
+				</p>
+				<p>
+					In the Repository, if there is any Issue or Discussion relates to any particular EFP,
+					it may be mentioned in the titles by starting with "[EFP <i>N</i>]" by the above clause.
+				</p>
+				<p>
+					If possible, the EFPs may also be linked in the article contents, by using
+					<code>[EFP <i>N</i>](https://...)</code> (in Markdown) or
+					<code>&lt;a href="https://..."&gt;EFP <i>N</i>&lt;/a&gt;</code> (in HTML), where
+					the hyperlink address is the rendered webpage of the EFP.
+				</p>
+			</content>
+		</section>
+	</body>
+</epc>
