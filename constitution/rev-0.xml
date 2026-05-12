@@ -1,0 +1,262 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<constitution xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="../schemas/constitution.xsd"
+              version="0" created="2025-05-08" pullRequest="1">
+	<body>
+		<preamble>
+			<p>
+				This Constitution establishes the Organizational Architecture of the <b><i>TerraModulus Project</i></b>
+				as the foundational framework governing the superior Realm for the entire Project,
+				administrating the Community, supervising the Projects and Policies,
+				moderating the Rules and Regulations,
+				and executing the Elements and Procedures for the entire Organizational Architecture.
+			</p>
+		</preamble>
+		<article title="Structures and Establishment">
+			<content>
+				<p>
+					The Governing System consists of Governing Bodies and Governing Executive Systems.
+					Execution Framework Proposals (EFPs) are Proposals which make decisions and operate procedures;
+					Executive Policy Charters (EPCs) are Charters which settle Policies, Rules and Regulations;
+					Executive Research Dossiers (ERDs) are Dossiers which Governing Researches shall be made.
+				</p>
+				<p>
+					On the whole, Governing Executive Systems maintain their own Roles and Purposes without overlaps;
+					and one may hierarchize the other; specific definitions shall be made in corresponding Charters.
+				</p>
+				<p>
+					A Proposal or a Charter may directly inherit another one from another Governing System,
+					when both Systems share the same mandatory features and functionalities;
+					in an inheritance, alignments of Things to this System shall be declared in the same Proposal.
+				</p>
+				<p>
+					Executive Directives (EDs) shall be initiated by a Governing Board for provisional or
+					possibly permanent executions for the Governing System.
+				</p>
+				<p>
+					Community Standards and Guidelines (CSG) include selections from EPCs for public reference
+					to applicable Rules and Regulations for the Community;
+					Execution Standards Compilation (ESC) includes selections from EFPs for public reference
+					to available Standards and Specifications for the Projects.
+				</p>
+				<p>
+					This Constitution and underlying Governing Systems shall uphold the supreme authority.
+				</p>
+				<p>
+					Jurisdiction of this Constitution shall always be covered under international regulations.
+					All acts in local areas shall also be covered under respective local jurisdictions.
+				</p>
+			</content>
+		</article>
+		<article title="Governing Bodies">
+			<content>
+				<p>
+					Members of the Bodies hold Roles in Governance of this Constitution,
+					with certain obligations and liabilities depending on their Powers and Permissions.
+				</p>
+				<p>
+					The Bodies hold authority over this Constitution.
+				</p>
+				<p>
+					The Host Organization of this Constitution holds supreme authority via a Governing Board.
+				</p>
+			</content>
+			<section title="Governing Board">
+				<content>
+					<p>
+						A Governing Board oversees and guides the Governing Council for administration and operation.
+					</p>
+					<p>
+						An Executive Leadership holds authority over the Executives.
+						The Executive Leadership shall be decided by the Host Organization of this Constitution
+						without participation of Community.
+					</p>
+					<p>
+						An optional Chief Governance Officer may be appointed to cooperate with the Leadership
+						in ensuring compliance with this Constitution and underlying Proposals and Charters.
+					</p>
+					<p>
+						Within this Board, a Supreme Governing Group shall be formed jointly by an Executive Leadership
+						and a Chief Governance Officer;
+						amendments and interpretations of this Constitution must be approved by Supreme Governing Group.
+					</p>
+				</content>
+			</section>
+			<section title="Governing Council">
+				<content>
+					<p>
+						A Governing Council discusses and votes Proposals being drafted or passed.
+					</p>
+					<p>
+						The Council oversee the Community by Process of Proposals.
+					</p>
+				</content>
+			</section>
+			<section title="Governing Executive Committee">
+				<content>
+					<p>
+						A Governing Executive Committee supervises the Governing Council.
+					</p>
+					<p>
+						Members of the Committee shall be elected and appointed from the Council.
+					</p>
+					<p>
+						The Committee may also discuss Proposals during discussions in the Council.
+					</p>
+					<p>
+						The Committee votes passed Proposals by the Council for Ratification,
+						which accords to the results of voting in the Council.
+					</p>
+				</content>
+			</section>
+		</article>
+		<article title="Directorial Branch">
+			<content>
+				<p>
+					Most governing acts by the Governing Bodies are under the Directorial Branch.
+				</p>
+			</content>
+			<section title="Process of Proposals">
+				<content>
+					<p>
+						Proposals are the primary Executive operations in Governance,
+						objectively driven by the Community.
+					</p>
+					<p>
+						Execution Framework Proposals (EFPs) are formal procedures to Executions in this Constitution;
+						they may provide standards, methods, and structured execution plans,
+						including but not limited to strategies, projects, guidelines and advice.
+					</p>
+					<p>
+						In the Executive and Governing levels, Proposals shall
+						outline how a project, procedure or initiative will be executed, managed, and monitored
+						to achieve its objectives, or,
+						explain or define a certain mechanism which would be applied onto this Constitution, or,
+						behave as a governing procedure for other purposes of Proposals.
+					</p>
+					<p>
+						Any Participant or Member of this Constitution maintain the Rights to initiate Proposals,
+						which shall potentially make changes to or affect any Part of the entire Architecture.
+					</p>
+					<p>
+						A Proposal may potentially represent stances of the Governing Bodies or the overall Project
+						by any means regardless.
+					</p>
+					<p>
+						A Proposal to initiations or amendments to a Charter shall be proposed via this Process;
+						a submission of the corresponding Charter must be enclosed jointly for Process of Charters;
+						the body of Proposal of Charter must only contain non-normative information to the Charter
+						while the main, normative body of the Charter remains in the main file of it.
+					</p>
+					<p>
+						A Proposal to initiations to a Research Dossier shall be proposed via this Process;
+						the Proposal shall optionally appoint Members of the Community for the Research Dossier.
+					</p>
+					<p>
+						Whenever a Proposal being Standards and Specifications for the Project,
+						it shall be submitted to Execution Standards Compilation (ESC).
+					</p>
+				</content>
+			</section>
+			<section title="Process of Charters">
+				<content>
+					<p>
+						Executive Policy Charters (EPCs) are formal authoritative forms of
+						Policies, Rules and Regulations in this Constitution;
+						they shall be led by Governing Bodies;
+						they may also establish organizational principles, governance structures, and policies.
+					</p>
+					<p>
+						Charters may be iterated by versions in different Streams of Charters.
+					</p>
+					<p>
+						Whenever a Charter being Policies, Rules and Regulations for the Community,
+						it shall be submitted to Community Standards and Guidelines (CSG).
+					</p>
+					<p>
+						All Participants and Members shall adhere to the Charters whenever
+						their designated administrative scope and obligations are applicable.
+					</p>
+				</content>
+			</section>
+			<section title="Executive Directives">
+				<content>
+					<p>
+						When an Executive Directive (ED) is proposed by the Governing Board, it shall be self-ratified.
+					</p>
+					<p>
+						Whenever a Directive affects this Constitution, a Proposal or a Charter,
+						a definite time limit must be declared; otherwise, the limit may be omitted.
+					</p>
+					<p>
+						In most cases, a Directive shall not affect this Constitution.
+					</p>
+				</content>
+			</section>
+		</article>
+		<article title="Managerial Branch">
+			<content>
+				<p>
+					The Managerial Branch is responsible for administrative operations in this Constitution.
+				</p>
+				<p>
+					Community Moderators may be elected from the Community and appointed by the Governing Bodies
+					to aid in moderation of the Community.
+				</p>
+			</content>
+		</article>
+		<article title="Investigative Branch">
+			<content>
+				<p>
+					Appointed members and voluntary participants shall conduct researches and investigations
+					as per a corresponding ratified Executive Research Dossier (ERD).
+				</p>
+			</content>
+			<section title="Process of Research Dossiers">
+				<content>
+					<p>
+						Executive Research Dossiers (ERDs) are structured summaries or compilations of
+						research findings, insights, and recommendations to provide high-level overviews of
+						research foundations, and shall provide suggestions and advice to governing operations.
+					</p>
+					<p>
+						Research Dossiers are filed by Topics of Researches, sequential by stages or times in Streams.
+					</p>
+				</content>
+			</section>
+		</article>
+		<article title="Participation of Community">
+			<content>
+				<p>
+					All Members of the Community have the rights to supervise the Governing Bodies
+					through participation and discussion in administrative activities.
+				</p>
+				<p>
+					In cases of dereliction of duty by the Governing Bodies,
+					the Community may challenge individuals through corresponding procedures defined in Charters.
+				</p>
+			</content>
+		</article>
+		<article title="Amendment Process">
+			<content>
+				<p>
+					This Constitution shall be amended only by extraordinary consensus for Ratification from
+					the Supreme Governing Group.
+				</p>
+				<p>
+					The Governing Council, whenever Members shall deem it necessary, shall propose an iterated Version
+					of this Constitution with all Amendments to be made in a Version.
+				</p>
+			</content>
+		</article>
+		<article title="Archival and Transparency">
+			<content>
+				<p>
+					All governing resources such as iterations of this Constitution and the Executive Systems,
+					must preserve historical versions for transparency.
+					All amendments and archives must be publicly documented.
+				</p>
+			</content>
+		</article>
+	</body>
+</constitution>
