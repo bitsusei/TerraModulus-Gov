@@ -1,0 +1,18 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<ed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../schemas/ed.xsd"
+    id="2026-1" created="2025-05-12" type="directive" pullRequest="2"
+    title="Provisional Directive to the First Draft of the Constitution">
+	<body>
+		<content>
+			<p>
+				This is effective until revision one of the Constitution is ratified.
+				Before formal revision of the Constitution, changes to the Constitution shall be made via
+				Executive Directives (EDs); such EDs shall pose time limit for time until formal changes
+				to the Constitution; for those EDs, reference to this ED shall be made.
+				When changes are made, reference to the Constitution must also consider the changes made
+				through those EDs.
+			</p>
+		</content>
+	</body>
+</ed>
