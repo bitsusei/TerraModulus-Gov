@@ -1,0 +1,143 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1">
+	<xs:element name="ed">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="body">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="content" type="content"/>
+							<xs:choice minOccurs="0">
+								<xs:element ref="article" maxOccurs="unbounded"/>
+								<xs:element ref="section" maxOccurs="unbounded"/>
+							</xs:choice>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="references" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="reference" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="id" type="xs:string" use="required">
+										<xs:simpleType>
+											<xs:restriction>
+												<xs:pattern value="\d+-[1-9]\d*"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required">
+				<xs:simpleType>
+					<xs:restriction>
+						<xs:pattern value="\d+-[1-9]\d*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="created" type="xs:date" use="required"/>
+			<xs:attribute name="announced" type="xs:date"/>
+			<xs:attribute name="effective" type="xs:date"/>
+			<xs:attribute name="type" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="directive"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="pullRequest" type="xs:positiveInteger" use="required"/>
+			<xs:attribute name="title" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="article" nillable="false">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="content" type="content" minOccurs="0"/>
+				<xs:choice minOccurs="0">
+					<xs:element name="clause" type="content" maxOccurs="unbounded"/>
+					<xs:element ref="section" maxOccurs="unbounded"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="title" type="xs:string" use="required"/>
+			<xs:assert test="content or clause or section"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="section">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="content" type="content" minOccurs="0"/>
+				<xs:element name="clause" type="content" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="title" type="xs:string" use="required"/>
+			<xs:assert test="content or clause"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="content" mixed="true">
+		<xs:complexContent>
+			<xs:extension base="xs:token">
+				<xs:choice maxOccurs="unbounded" minOccurs="0">
+					<!-- Some elements are referred from HTML and Writerside XML Markup -->
+					<xs:element name="br"/>
+					<xs:element name="dl">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="li">
+									<xs:complexType>
+										<xs:complexContent>
+											<xs:extension base="content">
+												<xs:attribute name="title" type="xs:string" use="required"/>
+											</xs:extension>
+										</xs:complexContent>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="i" type="content"/>
+					<xs:element name="b" type="content"/>
+					<xs:element name="u" type="content"/>
+					<xs:element name="p" type="content"/>
+					<xs:element name="list">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="li" type="content"/>
+							</xs:sequence>
+							<xs:attribute name="type" default="bullet">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="bullet"/>
+										<xs:enumeration value="decimal"/>
+										<xs:enumeration value="lower-alpha"/>
+										<xs:enumeration value="none"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="table">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="tr" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:choice maxOccurs="unbounded">
+											<xs:element name="th" type="content"/>
+											<xs:element name="td" type="content"/>
+										</xs:choice>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>
