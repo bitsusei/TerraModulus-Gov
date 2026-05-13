@@ -237,6 +237,38 @@
 				</p>
 			</content>
 		</section>
+		<section title="Proposal for Executive Policy Charter (EPC)">
+			<content>
+				<p>
+					Changes to a specific EPC must be enclosed jointly with the Proposal of it in a single Pull Request;
+					an addition of the EPC must be bound with the EFP that proposes the addition;
+					an update of the EPC must be bound with the EFP that proposes to update.
+				</p>
+				<p>
+					Contents of the Proposal of the EPC shall mostly be reference and commenting purposes only,
+					as non-normative, but other contents may still refer the contents for their own purposes.
+				</p>
+			</content>
+		</section>
+		<section title="Proposal for Executive Research Dossier (ERD)">
+			<content>
+				<p>
+					Initiation of a Stream or a Stage, of an ERD, must be proposed via an initiating EFP.
+				</p>
+				<p>
+					The Proposal shall include the background information, purposes, objectives and directions;
+					appointment of Members may also be stated if any appropriate.
+				</p>
+			</content>
+		</section>
+		<section title="Proposal as Execution Standards Compilation (ESC)">
+			<content>
+				<p>
+					<i>Standard</i> EFPs shall be appointed to a category of ESC when approved or finalized,
+					with following process accords to the Process of ESC.
+				</p>
+			</content>
+		</section>
 		<section title="Review and Approval">
 			<content>
 				<p>
