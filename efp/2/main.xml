@@ -1,0 +1,29 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<efp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="../../schemas/efp.xsd"
+     efp="2" created="2026-05-13" type="formal" category="governance" status="draft"
+     title="Proposal for Executive Policy Charter (EPC) Process">
+	<metadata>
+		<pullRequests>
+			<pullRequest id="4"/>
+		</pullRequests>
+	</metadata>
+	<body>
+		<section title="Introduction">
+			<content>
+				<p>
+					As established in the Constitution, Executive Policy Charters (EPCs) are executive-led, versioned,
+					and policy-defining. They establish organizational principles, governance structures, and policies,
+					but must always be initiated and guided by corresponding Execution Framework Proposals (EFPs).
+				</p>
+				<p>
+					The latest iteration of an EPC may represent the current Policies, Rules and Regulations
+					in the Constitution. It shall be a formal document with authoritative language.
+					Any Members scoped from an EPC shall obey and have obligations to follow the Contents.
+					Other than the basic Rules defined in the Constitution,
+					this Proposal refines further for detailed steps and procedures for EPCs.
+				</p>
+			</content>
+		</section>
+	</body>
+</efp>
